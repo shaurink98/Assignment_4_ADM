@@ -22,7 +22,8 @@ a. Compute Embeddings: Process the dataset and calculate embeddings, leveraging 
 b. Image Storage: Save images from Step 1 in an Amazon S3 bucket for optimized accessibility.
 c. Database Creation: Establish a database that correlates image IDs with text tags and embeddings, forming a comprehensive linkage.
 
-Part 3: FAST APIThe FAST API serves as the backbone, facilitating two primary functions:
+Part 3: FAST API:
+The FAST API serves as the backbone, facilitating two primary functions:
 a. Retrieve Closest Image based on Text Description: Utilize the /get_image_by_text endpoint for a POST request, providing a JSON with the text description. Receive a JSON with information on the closest image.
 b. Find Similar Images to a Given Image: Leverage the /get_similar_images endpoint for a POST request, supplying a JSON with either an uploaded image or a URL. Obtain a JSON response detailing information on three similar images.
 
